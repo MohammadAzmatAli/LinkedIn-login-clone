@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo-container img {
+    width: 100px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+}
+
+#form-container {
+    margin-inline: 1rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgb(200, 200, 200);
+    padding: 1.5rem;
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h2+span {
+        display: inline-block;
+        margin-block: .6rem;
+
+    }
+}
+
+
+
+form {
+    margin-top: 1.2rem;
+}
+
+.input-box {
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    input {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid rgb(180, 180, 180);
+        border-radius: 5px;
+        outline: none;
+        font-size: 1.1rem;
+    }
+
+    input:focus,
+    input:valid {
+        border-color: #1877f2;
+    }
+
+    input:focus~label,
+    input:valid~label {
+        top: -1px;
+        font-size: .8rem;
+        background-color: white;
+        padding-inline: 3px;
+        color: #1877f2;
+    }
+
+    label {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translate(0, -50%);
+        transition: .2s;
+        pointer-events: none;
+    }
+
+    #user-pass {
+        padding-right: 3rem;
+    }
+}
+
+.login-signup-btn {
+
+    padding: 1rem;
+    width: 100%;
+    font-size: .9rem;
+    border-radius: 30px;
+    border: 2px solid gray;
+    background-color: #ffffff;
+
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+#sign-in-btn {
+    background-color: #1877f2;
+    border-color: #1877f2;
+    color: white;
+}
+
+.centered-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+
+#show-hide-pass-btn {
+    position: absolute;
+    top: 50%;
+    right: .5rem;
+    transform: translate(0, -50%);
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #1877f2;
+    font-weight: bold;
+}
+
+.separator {
+    position: relative;
+    display: flex;
+    margin-block: 1.2rem;
+
+    span {
+        position: absolute;
+        padding-inline: .8rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+    }
+
+    hr {
+        width: 100%;
+        background-color: rgb(180, 180, 180);
+    }
+}
+
+@media (min-width: 750px) {
+    #form-container {
+        width: 500px;
+    }
+
+    #logo-container img {
+        width: 150px;
+    }
+}

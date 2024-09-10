@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | LinkedIn</title>
+    <!-- Linking the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking the javascript -->
+    <script src="script.js" defer></script>
+    <!-- Linking the icons from boxicons as font -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="logo.png" alt="logo">
+        </div>
+    </header>
+    <main>
+        <div id="form-container">
+            <h2>Sign in</h2>
+            <span>Stay updated on your professional world</span>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="email-phone" id="user-email-phone" required>
+                    <label for="email-phone">Email or Phone</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="pass" id="user-pass" required>
+                    <label for="pass">Password</label>
+                    <button type="button" id="show-hide-pass-btn" onclick="showHidePass();">Show</button>
+                </div>
+                <button id="sign-in-btn" class="login-signup-btn">Sign in</button>
+                <div class="separator">
+                    <hr>
+                    <span>or</span>
+                </div>
+                <button id="sign-in-apple-btn" class="centered-button login-signup-btn"><i class='bx bxl-apple'></i>
+                    Sign in with
+                    Apple</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
